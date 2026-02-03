@@ -30,8 +30,9 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, title, tags } = content
+  const { filePath, path, slug, date, title, tags, images } = content
   const basePath = path.split('/')[0]
+  const featuredImage = images && images.length > 0 ? images[0] : null
 
   return (
     <SectionContainer>
@@ -54,6 +55,11 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 <PageTitle>{title}</PageTitle>
               </div>
             </div>
+            {featuredImage && (
+              <div className="mx-auto mt-8 max-w-3xl overflow-hidden rounded-xl shadow-lg">
+                <img src={featuredImage} alt={title} className="h-auto w-full object-cover" />
+              </div>
+            )}
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0 dark:divide-gray-700">
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">

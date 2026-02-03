@@ -90,11 +90,11 @@ export default function ListLayoutWithTags({
         <div className="flex sm:space-x-24">
           <div className="hidden h-full max-h-screen max-w-[280px] min-w-[280px] flex-wrap overflow-auto rounded-sm bg-gray-50 pt-5 shadow-md sm:flex dark:bg-gray-900/70 dark:shadow-gray-800/40">
             <div className="px-6 py-4">
-              {pathname.startsWith('/blog') ? (
+              {pathname.startsWith('/news') ? (
                 <h3 className="text-primary-500 font-bold uppercase">All Posts</h3>
               ) : (
                 <Link
-                  href={`/blog`}
+                  href={`/news`}
                   className="hover:text-primary-500 dark:hover:text-primary-500 font-bold text-gray-700 uppercase dark:text-gray-300"
                 >
                   All Posts
@@ -124,36 +124,46 @@ export default function ListLayoutWithTags({
             </div>
           </div>
           <div>
-            <ul>
+            <ul className="grid gap-6">
               {displayPosts.map((post) => {
-                const { path, date, title, summary, tags } = post
+                const { path, date, title, summary, tags, images } = post
+                const featuredImage = images && images.length > 0 ? images[0] : null
                 return (
-                  <li key={path} className="py-5">
-                    <article className="flex flex-col space-y-2 xl:space-y-0">
-                      <dl>
-                        <dt className="sr-only">Published on</dt>
-                        <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
-                          <time dateTime={date} suppressHydrationWarning>
-                            {formatDate(date, siteMetadata.locale)}
-                          </time>
-                        </dd>
-                      </dl>
-                      <div className="space-y-3">
+                  <li key={path}>
+                    <article className="flex flex-col gap-4 rounded-xl bg-gray-50 p-4 shadow-md transition-shadow hover:shadow-lg md:flex-row dark:bg-gray-900/70 dark:shadow-gray-800/40">
+                      {featuredImage && (
+                        <Link href={`/${path}`} className="shrink-0 overflow-hidden rounded-lg">
+                          <img
+                            src={featuredImage}
+                            alt={title}
+                            className="h-48 w-full object-cover transition-transform hover:scale-105 md:h-40 md:w-56"
+                          />
+                        </Link>
+                      )}
+                      <div className="flex flex-1 flex-col justify-between space-y-2">
                         <div>
-                          <h2 className="text-2xl leading-8 font-bold tracking-tight">
+                          <dl>
+                            <dt className="sr-only">Published on</dt>
+                            <dd className="text-sm leading-6 font-medium text-gray-500 dark:text-gray-400">
+                              <time dateTime={date} suppressHydrationWarning>
+                                {formatDate(date, siteMetadata.locale)}
+                              </time>
+                            </dd>
+                          </dl>
+                          <h2 className="mt-1 text-xl leading-7 font-bold tracking-tight">
                             <Link href={`/${path}`} className="text-gray-900 dark:text-gray-100">
                               {title}
                             </Link>
                           </h2>
-                          <div className="flex flex-wrap">
+                          <div className="mt-2 flex flex-wrap gap-1">
                             {tags?.map((tag) => (
                               <Tag key={tag} text={tag} />
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <p className="line-clamp-2 text-sm text-gray-500 dark:text-gray-400">
                           {summary}
-                        </div>
+                        </p>
                       </div>
                     </article>
                   </li>
