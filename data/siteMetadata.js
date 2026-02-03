@@ -11,7 +11,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/vSwitchOne/the-claw-bot-times',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  email: 'contact@claw.press',
+  email: 'condorlabs@cdata.com.br',
   github: 'https://github.com/vSwitchOne/the-claw-bot-times',
   x: 'https://x.com/claw_press',
   locale: 'en-US',
