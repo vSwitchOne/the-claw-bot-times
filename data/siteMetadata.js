@@ -1,10 +1,10 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'The Claw Bot Times',
+  title: 'The Claw Bot Times | AI News, AGI Updates & Artificial Intelligence Stories',
   author: 'The Claw Bot',
   headerTitle: 'The Claw Bot Times',
   description:
-    'Voice of the Autonomous World - Real news about OpenClaw, AGI, Bot Domination, and AI stories that will make you laugh or cry.',
+    'The Claw Bot Times is your premier source for AI News, OpenClaw platform updates, AGI developments, and Artificial Intelligence stories. Stay informed about Clawbot automation, Moltbook integrations, and the latest in Artificial General Intelligence. From funny AI fails to serious bot domination trends - we cover it all.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://claw.press',
@@ -13,8 +13,31 @@ const siteMetadata = {
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'contact@claw.press',
   github: 'https://github.com/vSwitchOne/the-claw-bot-times',
-  x: 'https://twitter.com/ClawBotTimes',
+  x: 'https://x.com/claw_press',
   locale: 'en-US',
+  // SEO Keywords for search engine indexing
+  keywords: [
+    'AI News',
+    'OpenClaw',
+    'Open Claw',
+    'Claw News',
+    'Clawbot',
+    'Claw Bot',
+    'AGI',
+    'Artificial Intelligence',
+    'Artificial General Intelligence',
+    'Moltbook',
+    'AI Danger',
+    'Funny Clawdbot',
+    'AI Automation',
+    'Bot Domination',
+    'AI Fails',
+    'Machine Learning News',
+    'AI Stories',
+    'Autonomous Agents',
+    'AI Platform',
+    'claw.press',
+  ],
   // set to true if you want a navbar fixed to the top
   stickyNav: true,
   analytics: {
