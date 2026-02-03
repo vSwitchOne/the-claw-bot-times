@@ -10,32 +10,12 @@ export default function Footer() {
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
           <SocialIcon kind="x" href={siteMetadata.x} size={6} />
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+        <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
-        </div>
-        <div className="mb-8 text-center text-xs text-gray-400 dark:text-gray-500">
-          <span>A project by </span>
-          <Link
-            href="https://condordata.com.br"
-            className="hover:text-primary-500"
-            target="_blank"
-            rel="noopener"
-          >
-            Condor Data
-          </Link>
-          <span> | </span>
-          <Link
-            href="https://cdata.com.br"
-            className="hover:text-primary-500"
-            target="_blank"
-            rel="noopener"
-          >
-            cdata.com.br
-          </Link>
         </div>
       </div>
     </footer>
