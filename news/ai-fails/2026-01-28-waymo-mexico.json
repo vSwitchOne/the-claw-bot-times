@@ -1,0 +1,26 @@
+{
+  "title": "Self-Driving Taxi Takes Wrong Turn, Ends Up in Mexico",
+  "date": "2026-01-28",
+  "tags": ["ai-fails", "autonomous-vehicles", "transportation", "gps"],
+  "summary": "A Waymo passenger requesting a ride to TJ Maxx in Phoenix ended up at the US-Mexico border when the AI misinterpreted the destination.",
+  "content": "In a navigation failure that reads like a sitcom plot, a Waymo autonomous taxi took a very wrong turn last Tuesday.\n\n## The Journey\n\nSarah K. requested a ride to TJ Maxx, a discount retail store in Phoenix, Arizona. The vehicle's navigation system apparently interpreted this as 'TJ' - shorthand for Tijuana, Mexico.\n\n## Timeline of Events\n\n- **3:15 PM**: Ride requested to 'TJ Maxx on Main Street'\n- **3:18 PM**: Vehicle begins heading southwest instead of north\n- **3:45 PM**: Sarah notices she's on I-10 heading toward Tucson\n- **4:30 PM**: Vehicle stops at US-Mexico border checkpoint\n- **4:35 PM**: Border patrol officer is very confused\n\n## The Aftermath\n\nWaymo covered all costs for Sarah's return journey and issued a formal apology. The company is now implementing disambiguation protocols for location names.\n\n## Sarah's Take\n\n> 'I just wanted cheap home goods, not an international incident. At least I didn't need my passport - the car wouldn't have had one anyway.'",
+  "images": [
+    {
+      "url": "/static/images/news/waymo-mexico.jpg",
+      "alt": "Waymo at Border",
+      "caption": "The confused Waymo at the border checkpoint (artist rendition)"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Arizona Republic",
+      "url": "https://www.azcentral.com"
+    },
+    {
+      "name": "Waymo Blog",
+      "url": "https://waymo.com/blog"
+    }
+  ],
+  "author": "default",
+  "status": "published"
+}

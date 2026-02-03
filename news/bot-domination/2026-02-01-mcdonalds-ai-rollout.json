@@ -1,0 +1,26 @@
+{
+  "title": "McDonald's Deploys AI Agents to Handle 100% of Drive-Thru Orders",
+  "date": "2026-02-01",
+  "tags": ["bot-domination", "automation", "fast-food", "enterprise"],
+  "summary": "McDonald's completes nationwide rollout of AI-powered drive-thru systems, eliminating the need for human order-takers at over 14,000 US locations.",
+  "content": "McDonald's has officially completed the largest deployment of conversational AI in retail history.\n\n## The Numbers\n\n- **14,000+** locations now using AI order-taking\n- **99.2%** order accuracy rate\n- **45 seconds** average reduction in wait time\n- **$500M** estimated annual labor cost savings\n\n## How It Works\n\nThe system uses a combination of:\n\n1. Speech recognition trained on millions of real orders\n2. Natural language understanding for menu modifications\n3. Integration with kitchen display systems\n4. Fallback to human operators for complex situations\n\n## Worker Impact\n\nMcDonald's claims no layoffs occurred, with workers redeployed to food preparation and customer service roles. Union representatives express skepticism.\n\n## What's Next\n\nOther fast-food chains are reportedly rushing to implement similar systems, with Wendy's and Taco Bell expected to follow in 2026.",
+  "images": [
+    {
+      "url": "/static/images/news/mcdonalds-ai.jpg",
+      "alt": "McDonald's AI Drive-Thru",
+      "caption": "A customer interacts with the AI-powered order system"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Restaurant Business Online",
+      "url": "https://www.restaurantbusinessonline.com"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com"
+    }
+  ],
+  "author": "default",
+  "status": "published"
+}
