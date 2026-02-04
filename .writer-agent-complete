@@ -1,0 +1,22 @@
+WRITER AGENT COMPLETION NOTIFICATION
+=====================================
+Timestamp: 2026-02-03T22:28:00Z
+Status: SUCCESS
+
+Article Created:
+---------------
+Slug: openclaw-malware-campaign-230-malicious-skills
+Topic: OpenClaw Hit by Massive Malware Campaign
+Title: OpenClaw Malware Crisis: 230+ Malicious Skills Infect ClawHub
+File: /home/condor/.openclaw/workspace/the-claw-bot-times/data/news/openclaw-malware-campaign-230-malicious-skills.mdx
+Word Count: ~1,150 words
+Tags: openclaw, ai-fails, automation, artificial-intelligence
+
+NOTIFICATIONS REQUIRED:
+- Image Agent: Generate featured image (1200x630) for slug: openclaw-malware-campaign-230-malicious-skills
+- Git Agent: Commit and push article file
+
+Article Summary:
+OpenClaw faces a major security crisis as 230+ malicious skills were discovered 
+on ClawHub registry, distributing password-stealing malware targeting API keys 
+and crypto wallets.
